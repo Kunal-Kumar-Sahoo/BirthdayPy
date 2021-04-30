@@ -10,7 +10,7 @@ from termcolor import colored
 from config import *
 
 # Importing module specified in the config file
-art = __import__(f'arts.{artFile}', globals(), locals(), ['*'])
+art = __import__(f'{artFile}', globals(), locals(), ['*'])
 
 def replaceMultiple(mainString, toBeReplace, newString):
     """[Replace a set of multiple sub strings with a new string]
